@@ -33,6 +33,8 @@ En las etapas preliminares de la serie *Acelerógrafo V1.4*, se ensambló y cara
   4. **Integración Sensórica:** Integración del acelerómetro triaxial de precisión **ADXL355** sustituyendo tramas sintéticas por datos físicos reales.
   5. **Suite en Python y Ensayo de Co-localización:** Scripts para volcado directo de sectores USB y graficación temporal por intervalos tras someter a ambos nodos a perturbaciones periódicas sobre una misma base rígida.
 
+> 📖 **Guía de Referencia y Transición:** Para consultar el mapeo de archivos, lecciones aprendidas y código del proyecto anterior de David Timbi (`RSA-PPP-2026-08`), revisa el documento [docs/referencia_proyecto_anterior.md](docs/referencia_proyecto_anterior.md).
+
 ---
 
 ## 🏗️ Arquitectura de la Red y Flujo de Datos
@@ -108,6 +110,7 @@ ppp-2026-10-shm-nodos-sensores/
 ├── docs/
 │   ├── hardware/              # Reportes de retrabajo, pinout, diagramas y consumo eléctrico
 │   ├── troubleshooting/       # Bitácora de incidencias técnicas encontradas y soluciones
+│   ├── referencia_proyecto_anterior.md # Guía puente del proyecto previo (David Timbi)
 │   └── planificacion.md       # Documento oficial del plan de trabajo de 144 horas
 │
 ├── firmware/
