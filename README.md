@@ -9,7 +9,7 @@ Repositorio oficial del proyecto de prácticas preprofesionales para la adecuaci
 
 | Parámetro | Detalle |
 | :--- | :--- |
-| **Código del Proyecto** | `RSA-PPP-2026-10` |
+| **Código del Proyecto** | `RSA-PPP-2026-11` |
 | **Proyecto Institucional** | Validación Integral de Nodos Sensores para Red SHM (Serie Acelerógrafo V1.4) |
 | **Área Temática** | Sistemas Embebidos, Instrumentación Sísmica, Firmware en Tiempo Real y Análisis en Python |
 | **Estudiante / Pasante** | Geovanny Cullquicondo (`geovanny.cullquicondo@ucuenca.edu.ec`) |
@@ -33,7 +33,7 @@ En las etapas preliminares de la serie *Acelerógrafo V1.4*, se ensambló y cara
   4. **Integración Sensórica:** Integración del acelerómetro triaxial de precisión **ADXL355** sustituyendo tramas sintéticas por datos físicos reales.
   5. **Suite en Python y Ensayo de Co-localización:** Scripts para volcado directo de sectores USB y graficación temporal por intervalos tras someter a ambos nodos a perturbaciones periódicas sobre una misma base rígida.
 
-> 📖 **Guía de Referencia y Transición:** Para consultar el mapeo de archivos, lecciones aprendidas y código del proyecto anterior de David Timbi (`RSA-PPP-2026-08`), revisa el documento [docs/referencia_proyecto_anterior.md](docs/referencia_proyecto_anterior.md).
+> 📖 **Guía de Referencia y Transición:** Para consultar el mapeo de archivos, lecciones aprendidas y código del proyecto anterior de David Timbi (`RSA-PPP-2026-09`), revisa el documento [docs/referencia_proyecto_anterior.md](docs/referencia_proyecto_anterior.md).
 
 ---
 
@@ -102,7 +102,7 @@ En las etapas preliminares de la serie *Acelerógrafo V1.4*, se ensambló y cara
 ## 📂 Estructura del Repositorio
 
 ```text
-ppp-2026-10-shm-nodos-sensores/
+ppp-2026-11-shm-nodos-sensores/
 ├── data/
 │   ├── hxd_evidence/          # Capturas de inspección hexadecimal forense con HxD
 │   └── raw_samples/           # Volcados binarios crudos (.bin, .raw) de prueba

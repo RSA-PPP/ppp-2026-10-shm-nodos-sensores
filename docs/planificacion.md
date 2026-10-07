@@ -1,7 +1,7 @@
 ---
 titulo: "Plan de Trabajo de Prácticas Preprofesionales: Validación Integral de Nodos Sensores para Red de Monitorización de Salud Estructural (SHM)"
 proyecto: "Validación Integral de Nodos Sensores para Red de Monitorización de Salud Estructural (Serie Acelerógrafo V1.4 - Nodos Sensores)"
-codigo_proyecto: "RSA-PPP-2026-10"
+codigo_proyecto: "RSA-PPP-2026-11"
 area_tematica: "Sistemas Embebidos, Instrumentación Sísmica, Firmware en Tiempo Real (Doble Búfer), Almacenamiento SPI y Análisis en Python"
 estado: "Por Iniciar"
 version: "1.0"
@@ -37,7 +37,7 @@ tecnologias:
   - "Herramientas de Análisis Forense y Validación: Python 3 (NumPy, SciPy, Matplotlib para co-localización), Editor Hexadecimal HxD, Osciloscopio Hantek"
 
 repositorio:
-  url: "No disponible / Repositorio institucional en proceso de creación"
+  url: "https://github.com/RSA-PPP/ppp-2026-11-shm-nodos-sensores"
   rama_base: "main"
 ---
 

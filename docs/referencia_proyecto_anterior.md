@@ -1,7 +1,7 @@
 # Guía de Referencia y Transición Técnica
 ## Proyecto Precedente: Ensamblaje y Validación de Red SHM V1.4
 
-Este documento establece el puente de continuidad técnica entre el proyecto finalizado por **David Timbi** (`RSA-PPP-2026-08`) y la actual fase de validación integral y almacenamiento autónomo ejecutada por **Geovanny Cullquicondo** (`RSA-PPP-2026-10`).
+Este documento establece el puente de continuidad técnica entre el proyecto finalizado por **David Timbi** (`RSA-PPP-2026-09`) y la actual fase de validación integral y almacenamiento autónomo ejecutada por **Geovanny Cullquicondo** (`RSA-PPP-2026-11`).
 
 ---
 
@@ -9,11 +9,11 @@ Este documento establece el puente de continuidad técnica entre el proyecto fin
 
 | Parámetro | Detalle |
 | :--- | :--- |
-| **Código Institucional** | `RSA-PPP-2026-08` |
+| **Código Institucional** | `RSA-PPP-2026-09` |
 | **Nombre del Proyecto** | Ensamblaje, Programación y Validación de Red Distribuida SHM (Serie Acelerógrafo V1.4) |
 | **Pasante Autor** | David Timbi (`david.timbi@ucuenca.edu.ec`) |
 | **Tutor Institucional** | Ing. Milton Muñoz (`milton.munozc@ucuenca.edu.ec`) — RSA |
-| **Repositorio Oficial** | [RSA-PPP/ppp-2026-08-shm-ensamblaje-validacion](https://github.com/RSA-PPP/ppp-2026-08-shm-ensamblaje-validacion) |
+| **Repositorio Oficial** | [RSA-PPP/ppp-2026-09-shm-ensamblaje-validacion](https://github.com/RSA-PPP/ppp-2026-09-shm-ensamblaje-validacion) |
 | **Estado** | Culminado (Septiembre 2026) |
 
 ---
@@ -44,7 +44,7 @@ En la iteración previa de David Timbi, la prueba de concepto (PoC) de almacenam
 > Los zócalos para tarjetas MicroSD soldados originalmente en las placas V1.4 **carecían del pin mecánico de detección de presencia de tarjeta (*card-detect*)**.  
 > Para sortear este problema, en el firmware anterior se forzó la detección por software (`sdflags.detected = 1` y `SD_DETECCION_HARDWARE = 0`). Sin embargo, sin la señal física de inserción, la inicialización del bus SPI en baja velocidad (`CMD0`, `CMD8`, `ACMD41`) no operó con repetibilidad, generando fallos continuos ante tarjetas SanDisk y respuestas anómalas en el comando `CMD17`.
 
-### ¿Cómo se resuelve en el proyecto actual (`RSA-PPP-2026-10`)?
+### ¿Cómo se resuelve en el proyecto actual (`RSA-PPP-2026-11`)?
 1. **En la Fase 1:** Se desueldan físicamente los zócalos anteriores y se montan nuevos zócalos MicroSD que sí disponen de contacto mecánico de *card-detect*.
 2. **En la Fase 2:** El firmware en MikroC **no debe forzar banderas ficticias en memoria**. La inicialización y la máquina de estados deben quedar estrictamente condicionadas a la lectura del pin de hardware del nuevo zócalo.
 
@@ -52,7 +52,7 @@ En la iteración previa de David Timbi, la prueba de concepto (PoC) de almacenam
 
 ## 🗺️ Mapa de Navegación del Repositorio Anterior
 
-Si tienes dudas o necesitas consultar el código fuente de David Timbi en [ppp-2026-08-shm-ensamblaje-validacion](https://github.com/RSA-PPP/ppp-2026-08-shm-ensamblaje-validacion), guíate por este mapa:
+Si tienes dudas o necesitas consultar el código fuente de David Timbi en [ppp-2026-09-shm-ensamblaje-validacion](https://github.com/RSA-PPP/ppp-2026-09-shm-ensamblaje-validacion), guíate por este mapa:
 
 | Carpeta en Repo Anterior | ¿Qué contiene? | ¿Cómo utilizarlo en tu proyecto? |
 | :--- | :--- | :--- |
